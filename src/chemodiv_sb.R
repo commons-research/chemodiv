@@ -228,6 +228,16 @@ myrmecoNetwork <- molNet(compDisMat = myrmecoCompDis$npcDisMat,
 
 summary(myrmecoNetwork)
 
+library(igraph)
+
+write_graph(
+  myrmecoNetwork,
+  'test.graphml',
+  format = "graphml"
+)
+
+
+
 
 molNetPlot(sampleData = myrmecoSampData_filt,
            networkObject = myrmecoNetwork$networkObject,
