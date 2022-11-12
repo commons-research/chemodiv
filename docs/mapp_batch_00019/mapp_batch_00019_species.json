@@ -1,0 +1,52 @@
+{
+  "context": "Insects",
+  "governing_code": "ICZN",
+  "includes_approximate_matches": true,
+  "includes_deprecated_taxa": false,
+  "includes_suppressed_names": false,
+  "matched_names": [
+    "myrmecocystus mexicanus"
+  ],
+  "results": [
+    {
+      "matches": [
+        {
+          "is_approximate_match": false,
+          "is_synonym": false,
+          "matched_name": "Myrmecocystus mexicanus",
+          "nomenclature_code": "ICZN",
+          "score": 1.0,
+          "search_string": "myrmecocystus mexicanus",
+          "taxon": {
+            "flags": [],
+            "is_suppressed": false,
+            "is_suppressed_from_synth": false,
+            "name": "Myrmecocystus mexicanus",
+            "ott_id": 853085,
+            "rank": "species",
+            "source": "ott3.3draft1",
+            "synonyms": [],
+            "tax_sources": [
+              "ncbi:271132",
+              "gbif:1316753",
+              "irmng:10219505"
+            ],
+            "unique_name": "Myrmecocystus mexicanus"
+          }
+        }
+      ],
+      "name": "myrmecocystus mexicanus"
+    }
+  ],
+  "taxonomy": {
+    "author": "open tree of life project",
+    "name": "ott",
+    "source": "ott3.3draft1",
+    "version": "3.3",
+    "weburl": "https://tree.opentreeoflife.org/about/taxonomy-version/ott3.3"
+  },
+  "unambiguous_names": [
+    "myrmecocystus mexicanus"
+  ],
+  "unmatched_names": []
+}
