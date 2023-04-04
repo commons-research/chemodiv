@@ -131,7 +131,6 @@ myrmecoSampData <- SampData
 # The compounds data is fetched from the met_annot_enhancer results folder
 CompData <- read.csv('docs/mapp_batch_00019/mapp_batch_00019_spectral_match_results_repond_flat.tsv', sep = '\t')
 
-head(CompData)
 
 CompData <- CompData %>%
     select(feature_id, structure_smiles, structure_inchikey) %>%
@@ -140,13 +139,10 @@ CompData <- CompData %>%
         smiles = structure_smiles,
         inchikey = structure_inchikey
     )  %>% 
-    # here we change the datatype of the feature_id to character
-    mutate_at(vars(compound), ~as.character(.))  %>%
-    mutate_all(na_if, "")  %>% 
+    mutate_all(na_if,"")  %>% 
     arrange(compound)  %>% 
     distinct(compound, .keep_all= TRUE)
 
-glimpse(CompData)
 
 CompData <- na.omit(CompData)
 
