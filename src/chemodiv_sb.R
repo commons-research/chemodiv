@@ -248,11 +248,28 @@ molNetPlot(sampleData = myrmecoSampData_filt,
            npcTable = myrmecoNPC_nona,
            plotNames = FALSE)
 
-chemoDivPlot(compDisMat = myrmecoCompDis$npcDisMat
-            #  divData = myrmecoDiv,
-            #  divProfData = myrmecoDivProf,
-            #  sampDisMat = myrmecoSampDis$GenUniFrac,
-            #  groupData = myrmecoMetaData$ATTRIBUTE_colony
-             )
+chemoDivPlot(compDisMat = myrmecoCompDis$npcDisMat,
+            divData = myrmecoDiv,
+            divProfData = myrmecoDivProf,
+            sampDisMat = myrmecoSampDis$GenUniFrac,
+            groupData = myrmecoMetaData$ATTRIBUTE_colony
+            )
 
 ?chemodiv
+
+myrmecoCompDis$npcDisMat
+
+
+sampDisMat
+
+
+# Generate a dissimilarity matrix
+dissimilarity_matrix <- matrix(c(0, 1, 2, 1, 0, 3, 2, 3, 0), nrow = 3)
+
+# Perform hierarchical clustering
+hc <- hclust(as.dist(myrmecoSampDis$GenUniFrac))
+
+# Plot dendrogram
+plot(hc)
+
+
